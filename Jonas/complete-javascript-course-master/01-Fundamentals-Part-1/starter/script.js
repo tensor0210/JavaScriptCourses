@@ -16,3 +16,8 @@ let mySecondJob = 'Senior Software Engineer';
   * Null
   * BigInt
   * */
+
+let allowPassenger = true;
+let javascriptIsFun = true;
+
+console.log(typeof true);
