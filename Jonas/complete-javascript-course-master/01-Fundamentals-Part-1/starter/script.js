@@ -48,6 +48,8 @@ console.log(ageJonas, ageSarah);
 const firstName = 'Jonas';
 const lastName = 'Schedtmann';
 console.log(firstName + ' ' + lastName);
+console.log(firstName);
 
-let x = 10 + 5;
-console.log(x);
+console.log(25 - 10 - 5);
+
+const averageAge = (ageJonas + ageSarah) / 2;
