@@ -114,8 +114,19 @@
 // 	console.log('Sarah is Able to drive!');
 // }
 
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKolas = (98 + 91 + 110) / 3;
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKolas = (98 + 91 + 110) / 3;
 
-const result = scoreDolphins > scoreKolas ? `🐬` : '🐨';
-console.log(result);
+// const result = scoreDolphins > scoreKolas ? `🐬` : '🐨';
+// console.log(result);
+
+//The Switch Statement
+const day = `Monday`;
+
+switch (day) {
+	case 'monday':
+		console.log('Plan course Structure');
+		break;
+	case `Tuesday`:
+		console.log('Prepare Videos');
+}
