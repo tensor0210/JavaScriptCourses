@@ -40,16 +40,18 @@ const birthYear = 1991;
 // birthYear = 1990;
 
 //Operators
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageJonas, ageSarah);
+// const now = 2037;
+// const ageJonas = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(ageJonas, ageSarah);
 
-const firstName = 'Jonas';
-const lastName = 'Schedtmann';
-console.log(firstName + ' ' + lastName);
-console.log(firstName);
+// const firstName = 'Jonas';
+// const lastName = 'Schedtmann';
+// console.log(firstName + ' ' + lastName);
+// console.log(firstName);
 
-console.log(25 - 10 - 5);
+// console.log(25 - 10 - 5);
 
-const averageAge = (ageJonas + ageSarah) / 2;
+// const averageAge = (ageJonas + ageSarah) / 2;
+
+//Challenge
