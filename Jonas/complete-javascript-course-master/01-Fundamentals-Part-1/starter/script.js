@@ -108,3 +108,8 @@ const hasGoodVision = false;
 console.log(hasDriverLicense && hasGoodVision);
 console.log(hasDriverLicense && !hasGoodVision);
 console.log(hasDriverLicense || hasGoodVision);
+
+const shouldDrive = hasDriverLicense && hasGoodVision;
+if (hasGoodVision && hasDriverLicense) {
+	console.log('Sarah is Able to drive!');
+}
