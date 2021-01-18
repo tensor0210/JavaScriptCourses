@@ -90,7 +90,21 @@
 
 // console.log(century);
 
-const inputYear = `1991`;
-console.log(Number(inputYear), inputYear);
-console.log(inputYear + 18);
-console.log(Number('Vidit'));
+// const inputYear = `1991`;
+// console.log(Number(inputYear), inputYear);
+// console.log(inputYear + 18);
+// console.log(Number('Vidit'));
+// console.log(String(23), 23);
+
+// let n = '1' + 1;
+// n -= 1;
+// console.log(n);
+
+// Truthy and Falsy Values
+// console.log(Boolean({}));
+
+const hasDriverLicense = true;
+const hasGoodVision = false;
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense && !hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
