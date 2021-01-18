@@ -33,10 +33,10 @@
 
 //Declearing Variables in javascript
 
-let age = 30;
-age = 31;
+// let age = 30;
+// age = 31;
 
-const birthYear = 1991;
+// const birthYear = 1991;
 // birthYear = 1990;
 
 //Operators
@@ -55,17 +55,37 @@ const birthYear = 1991;
 // const averageAge = (ageJonas + ageSarah) / 2;
 
 //Challenge BMI
-let markHeight = 1.69;
-let johnHeight = 1.88;
+// let markHeight = 1.69;
+// let johnHeight = 1.88;
 
-let markWeight = 78;
-let johnWeight = 95;
+// let markWeight = 78;
+// let johnWeight = 95;
 
-let markBMI = markWeight / markHeight ** 2;
-let johnBMI = johnWeight / johnHeight ** 2;
+// let markBMI = markWeight / markHeight ** 2;
+// let johnBMI = johnWeight / johnHeight ** 2;
 
-const markHigherBMI = markBMI > johnBMI;
+// const result = markBMI > johnBMI ? `Mark has Higher BMI` : 'John has Higher BMI';
 
-console.log(markHigherBMI);
+// console.log(result);
+// console.log(markHigherBMI);
 
 //  Swith '' "" to `` for better string performances
+
+//Taking Decisions
+// const age = 17;
+// const isOldEnough = age >= 18;
+// if (isOldEnough) {
+// 	console.log('Sarah can Start Driving 🚗');
+// } else {
+// 	console.log(`🙅🏻‍♂️`);
+// }
+
+// let century = undefined;
+// const birthYear = 1996;
+// if (birthYear <= 2000) {
+// 	century = 20;
+// } else {
+// 	century = 21;
+// }
+
+// console.log(century);
