@@ -54,4 +54,16 @@ const birthYear = 1991;
 
 // const averageAge = (ageJonas + ageSarah) / 2;
 
-//Challenge
+//Challenge BMI
+let markHeight = 1.69;
+let johnHeight = 1.88;
+
+let markWeight = 78;
+let johnWeight = 95;
+
+let markBMI = markWeight / markHeight ** 2;
+let johnBMI = johnWeight / johnHeight ** 2;
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markHigherBMI);
