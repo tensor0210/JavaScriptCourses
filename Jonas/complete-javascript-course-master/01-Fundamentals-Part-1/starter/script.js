@@ -121,12 +121,14 @@
 // console.log(result);
 
 //The Switch Statement
-const day = `Monday`;
+// const day = `Monday`;
 
-switch (day) {
-	case 'monday':
-		console.log('Plan course Structure');
-		break;
-	case `Tuesday`:
-		console.log('Prepare Videos');
-}
+// switch (day) {
+// 	case 'monday':
+// 		console.log('Plan course Structure');
+// 		break;
+// 	case `Tuesday`:
+// 		console.log('Prepare Videos');
+// }
+// const bill = 300;
+// const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
