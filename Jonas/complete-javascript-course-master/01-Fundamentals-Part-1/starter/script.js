@@ -67,3 +67,5 @@ let johnBMI = johnWeight / johnHeight ** 2;
 const markHigherBMI = markBMI > johnBMI;
 
 console.log(markHigherBMI);
+
+//  Swith '' "" to `` for better string performances
