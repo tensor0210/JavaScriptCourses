@@ -103,13 +103,19 @@
 // Truthy and Falsy Values
 // console.log(Boolean({}));
 
-const hasDriverLicense = true;
-const hasGoodVision = false;
-console.log(hasDriverLicense && hasGoodVision);
-console.log(hasDriverLicense && !hasGoodVision);
-console.log(hasDriverLicense || hasGoodVision);
+// const hasDriverLicense = true;
+// const hasGoodVision = false;
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(hasDriverLicense && !hasGoodVision);
+// console.log(hasDriverLicense || hasGoodVision);
 
-const shouldDrive = hasDriverLicense && hasGoodVision;
-if (hasGoodVision && hasDriverLicense) {
-	console.log('Sarah is Able to drive!');
-}
+// const shouldDrive = hasDriverLicense && hasGoodVision;
+// if (hasGoodVision && hasDriverLicense) {
+// 	console.log('Sarah is Able to drive!');
+// }
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKolas = (98 + 91 + 110) / 3;
+
+const result = scoreDolphins > scoreKolas ? `🐬` : '🐨';
+console.log(result);
