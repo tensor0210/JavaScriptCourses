@@ -5,12 +5,6 @@
 // }
 // logger();
 
-// function fruitProcessor(apples, orange) {
-// 	console.log(apples, orange);
-// 	const juice = `Juice with ${apples} apple and ${orange}`;
-// 	return juice;
-// }
-
 // const appleJuice = fruitProcessor(5, 0);
 // console.log(appleJuice);
 // const appleOrangeJuice = fruitProcessor(2, 4);
@@ -29,13 +23,27 @@
 // console.log(typeof calcAge);
 
 //Arrow Functions
-const calcAge = (birthYear) => 2037 - birthYear;
-console.log(calcAge(1996));
+// const calcAge = (birthYear) => 2037 - birthYear;
+// console.log(calcAge(1996));
 
-const yearsUntilRetirement = (birthYear, firstName, lastName) => {
-	const age = 2021 - birthYear;
-	const retirement = 65 - age;
-	return retirement;
-};
+// const yearsUntilRetirement = (birthYear, firstName, lastName) => {
+// 	const age = 2021 - birthYear;
+// 	const retirement = 65 - age;
+// 	return retirement;
+// };
 
-console.log(yearsUntilRetirement(1996));
+// console.log(yearsUntilRetirement(1996));
+
+function cutFruitPieces(fruit) {
+	return fruit * 4;
+}
+
+function fruitProcessor(apples, orange) {
+	const applePieces = cutFruitPieces(apples);
+	const orangePieces = cutFruitPieces(orange);
+	console.log(apples, orange);
+	const juice = `Juice with ${applePieces} apple and ${orangePieces}`;
+	return juice;
+}
+
+console.log(fruitProcessor(2, 3));
