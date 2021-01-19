@@ -137,3 +137,4 @@ console.log(Jonas.lastName);
 console.log(Jonas[`lastName`]);
 const nameKey = 'Name';
 console.log(Jonas[`first${nameKey}`]);
+console.log(`Jonaas has ${Jonas.friends.length} friends`);
