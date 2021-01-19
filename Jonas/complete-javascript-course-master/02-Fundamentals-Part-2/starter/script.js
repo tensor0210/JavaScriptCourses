@@ -216,6 +216,13 @@ const JonasArray = [
 
 //continue and break the loop
 
-for (let i = JonasArray.length - 1; i >= 0; i--) {
-	console.log(JonasArray[i]);
-}
+// for (let i = JonasArray.length - 1; i >= 0; i--) {
+// 	if (typeof JonasArray[i]) {
+// 		let elementLength = JonasArray[i].length;
+// 		for (let j = 0; j < elementLength; j++) {
+// 			console.log(JonasArray[i][j]);
+// 		}
+// 	} else {
+// 		console.log(JonasArray[i]);
+// 	}
+// }
