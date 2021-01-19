@@ -130,7 +130,7 @@
 // const Jonas = {
 // 	firstName         : 'Jonas',
 // 	lastName          : 'Scmedtmann',
-// 	age               : 2073 - 1991,
+// 	// age               : 2073 - 1991,
 // 	job               : 'teacher',
 // 	friends           : [
 // 		'Michael',
@@ -158,8 +158,8 @@
 // 	}
 // };
 
-// // console.log(Jonas.calcAge(1996));
-// // console.log(Jonas[`calcAge`](1996));
+// console.log(Jonas.calcAge(1996));
+// console.log(Jonas[`calcAge`](1996));
 // console.log(Jonas[`calcAge`]());
 // console.log(Jonas.age);
 // console.log(Jonas.getSummary());
@@ -183,6 +183,7 @@ const john = {
 		return this.BMI;
 	}
 };
-
 console.log(mark.calcBMI());
+console.log(mark.BMI);
+
 console.log(john.calcBMI());
