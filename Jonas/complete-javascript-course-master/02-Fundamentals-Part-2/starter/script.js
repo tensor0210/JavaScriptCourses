@@ -121,20 +121,21 @@
 
 // console.log(tips, totals);
 
-const Jonas = {
-	firstName : 'Jonas',
-	lastName  : 'Scmedtmann',
-	age       : 2073 - 1991,
-	job       : 'teacher',
-	friends   : [
-		'Michael',
-		'Peter',
-		'Steven'
-	]
-};
+// const Jonas = {
+// 	firstName : 'Jonas',
+// 	lastName  : 'Scmedtmann',
+// 	age       : 2073 - 1991,
+// 	job       : 'teacher',
+// 	friends   : [
+// 		'Michael',
+// 		'Peter',
+// 		'Steven'
+// 	]
+// };
 
-console.log(Jonas.lastName);
-console.log(Jonas[`lastName`]);
-const nameKey = 'Name';
-console.log(Jonas[`first${nameKey}`]);
-console.log(`Jonaas has ${Jonas.friends.length} friends`);
+// console.log(Jonas.lastName);
+// console.log(Jonas[`lastName`]);
+// const nameKey = 'Name';
+// console.log(Jonas[`first${nameKey}`]);
+// console.log(`Jonaas has ${Jonas.friends.length} friends`);
+
