@@ -65,3 +65,32 @@
 
 // checkWinner(scoreDolphins, scoreKoalas);
 
+const friends = [
+	'Michael',
+	'Steven',
+	'Peter'
+];
+
+const newLength = friends.push('Jay!');
+
+console.log(friends);
+
+friends.unshift(`John`);
+console.log(friends);
+
+//Remove Elements
+friends.pop(); //Removes last element of the array
+console.log(friends);
+
+const popped = friends.pop();
+console.log(popped);
+
+console.log(friends);
+const removeFirstElement = friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
