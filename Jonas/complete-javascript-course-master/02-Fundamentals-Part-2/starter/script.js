@@ -65,32 +65,59 @@
 
 // checkWinner(scoreDolphins, scoreKoalas);
 
-const friends = [
-	'Michael',
-	'Steven',
-	'Peter'
-];
+// const friends = [
+// 	'Michael',
+// 	'Steven',
+// 	'Peter'
+// ];
 
-const newLength = friends.push('Jay!');
+// const newLength = friends.push('Jay!');
 
-console.log(friends);
+// console.log(friends);
 
-friends.unshift(`John`);
-console.log(friends);
+// friends.unshift(`John`);
+// console.log(friends);
 
-//Remove Elements
-friends.pop(); //Removes last element of the array
-console.log(friends);
+// //Remove Elements
+// friends.pop(); //Removes last element of the array
+// console.log(friends);
 
-const popped = friends.pop();
-console.log(popped);
+// const popped = friends.pop();
+// console.log(popped);
 
-console.log(friends);
-const removeFirstElement = friends.shift();
-console.log(friends);
+// console.log(friends);
+// const removeFirstElement = friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob'));
 
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+
+// if (friends.includes('Peter')) {
+// 	console.log('You have Peter already in your friends list');
+// }
+
+// const calcTip = (bill) => {
+// 	return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+// const bills = [
+// 	125,
+// 	555,
+// 	44
+// ];
+
+// const tips = [
+// 	calcTip(bills[0]),
+// 	calcTip(bills[1]),
+// 	calcTip(bills[2])
+// ];
+// const totals = [
+// 	bills[0] + tips[0],
+// 	bills[1] + tips[1],
+// 	bills[2] + tips[2]
+// ];
+
+// console.log(tips, totals);
+
