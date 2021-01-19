@@ -132,3 +132,8 @@ const Jonas = {
 		'Steven'
 	]
 };
+
+console.log(Jonas.lastName);
+console.log(Jonas[`lastName`]);
+const nameKey = 'Name';
+console.log(Jonas[`first${nameKey}`]);
