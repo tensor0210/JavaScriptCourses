@@ -188,6 +188,22 @@
 
 // console.log(john.calcBMI());
 
-for (let rep = 1; rep <= 10; rep++) {
-	console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// for (let rep = 1; rep <= 10; rep++) {
+// 	console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+const JonasArray = [
+	'Jonas',
+	'Schmedtmann',
+	2037 - 1996,
+	'teacher',
+	[
+		'Michael',
+		'Peter',
+		'Steven '
+	]
+];
+
+for (let i = 0; i <= JonasArray.length; i++) {
+	console.log(JonasArray[i]);
 }
