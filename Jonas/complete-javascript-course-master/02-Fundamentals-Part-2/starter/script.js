@@ -164,3 +164,25 @@
 // console.log(Jonas.age);
 // console.log(Jonas.getSummary());
 
+const mark = {
+	fullName : 'Mark Miller',
+	mass     : 78,
+	height   : 1.69,
+	calcBMI  : function() {
+		this.BMI = this.mass / this.height ** 2;
+		return this.BMI;
+	}
+};
+
+const john = {
+	fullName : 'John Smith',
+	mass     : 92,
+	height   : 1.95,
+	calcBMI  : function() {
+		this.BMI = this.mass / this.height ** 2;
+		return this.BMI;
+	}
+};
+
+console.log(mark.calcBMI());
+console.log(john.calcBMI());
