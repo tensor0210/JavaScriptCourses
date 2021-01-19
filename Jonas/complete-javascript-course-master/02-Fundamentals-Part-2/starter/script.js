@@ -201,9 +201,21 @@ const JonasArray = [
 		'Michael',
 		'Peter',
 		'Steven '
-	]
+	],
+	true
 ];
 
-for (let i = 0; i <= JonasArray.length; i++) {
+// const types = [];
+
+// for (let i = 0; i < JonasArray.length; i++) {
+// 	console.log(JonasArray[i]);
+// 	types[i] = typeof JonasArray[i];
+// }
+
+// console.log(types);
+
+//continue and break the loop
+
+for (let i = JonasArray.length - 1; i >= 0; i--) {
 	console.log(JonasArray[i]);
 }
