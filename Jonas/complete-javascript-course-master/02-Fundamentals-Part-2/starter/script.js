@@ -34,16 +34,33 @@
 
 // console.log(yearsUntilRetirement(1996));
 
-function cutFruitPieces(fruit) {
-	return fruit * 4;
-}
+// function cutFruitPieces(fruit) {
+// 	return fruit * 4;
+// }
 
-function fruitProcessor(apples, orange) {
-	const applePieces = cutFruitPieces(apples);
-	const orangePieces = cutFruitPieces(orange);
-	console.log(apples, orange);
-	const juice = `Juice with ${applePieces} apple and ${orangePieces}`;
-	return juice;
-}
+// function fruitProcessor(apples, orange) {
+// 	const applePieces = cutFruitPieces(apples);
+// 	const orangePieces = cutFruitPieces(orange);
+// 	console.log(apples, orange);
+// 	const juice = `Juice with ${applePieces} apple and ${orangePieces}`;
+// 	return juice;
+// }
 
-console.log(fruitProcessor(2, 3));
+// console.log(fruitProcessor(2, 3));
+
+const calcAverage = (num1, num2, num3) => (num1 + num2 + num3) / 3;
+
+const scoreDolphins = calcAverage(100, 100, 200);
+const scoreKoalas = calcAverage(65, 23, 71);
+console.log(scoreDolphins, scoreKoalas);
+const checkWinner = function(avgDolphins, avgKoalas) {
+	if (avgDolphins >= 2 * avgKoalas) {
+		console.log(`Dolphin wins 🏆`);
+	} else if (avgKoalas >= 2 * avgDolphins) {
+		console.log(`Koalas wins 🏆`);
+	} else {
+		console.log(`No team wins`);
+	}
+};
+
+checkWinner(scoreDolphins, scoreKoalas);
