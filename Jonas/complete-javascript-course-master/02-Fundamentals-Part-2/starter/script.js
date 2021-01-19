@@ -127,39 +127,40 @@
 // console.log(Jonas[`first${nameKey}`]);
 // console.log(`Jonaas has ${Jonas.friends.length} friends`);
 
-const Jonas = {
-	firstName         : 'Jonas',
-	lastName          : 'Scmedtmann',
-	age               : 2073 - 1991,
-	job               : 'teacher',
-	friends           : [
-		'Michael',
-		'Peter',
-		'Steven'
-	],
-	birthYear         : 1996,
-	hasDriversLicense : true,
-	// calcAge           : function(birthYear) {
-	// 	return 2021 - birthYear;
-	// }
-	// calcAge           : function() {
-	// 	console.log(this);
-	// 	return 2021 - this.birthYear;
-	// }
-	calcAge           : function() {
-		this.age = 2021 - this.birthYear;
-		return this.age;
-	},
-	getSummary        : function() {
-		return `Name ${this.firstName} and his age is ${this.age} and he 
-    ${this.hasDriversLicense ? ' has drivers liscense' : 'Does not have drivers liscense'}
-    
-    `;
-	}
-};
+// const Jonas = {
+// 	firstName         : 'Jonas',
+// 	lastName          : 'Scmedtmann',
+// 	age               : 2073 - 1991,
+// 	job               : 'teacher',
+// 	friends           : [
+// 		'Michael',
+// 		'Peter',
+// 		'Steven'
+// 	],
+// 	birthYear         : 1996,
+// 	hasDriversLicense : true,
+// 	// calcAge           : function(birthYear) {
+// 	// 	return 2021 - birthYear;
+// 	// }
+// 	// calcAge           : function() {
+// 	// 	console.log(this);
+// 	// 	return 2021 - this.birthYear;
+// 	// }
+// 	calcAge           : function() {
+// 		this.age = 2021 - this.birthYear;
+// 		return this.age;
+// 	},
+// 	getSummary        : function() {
+// 		return `Name ${this.firstName} and his age is ${this.age} and he
+//     ${this.hasDriversLicense ? ' has drivers liscense' : 'Does not have drivers liscense'}
 
-// console.log(Jonas.calcAge(1996));
-// console.log(Jonas[`calcAge`](1996));
-console.log(Jonas[`calcAge`]());
-console.log(Jonas.age);
-console.log(Jonas.getSummary());
+//     `;
+// 	}
+// };
+
+// // console.log(Jonas.calcAge(1996));
+// // console.log(Jonas[`calcAge`](1996));
+// console.log(Jonas[`calcAge`]());
+// console.log(Jonas.age);
+// console.log(Jonas.getSummary());
+
