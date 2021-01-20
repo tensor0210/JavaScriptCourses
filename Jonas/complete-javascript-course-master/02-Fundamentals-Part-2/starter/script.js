@@ -189,18 +189,18 @@
 // 	console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 // }
 
-const JonasArray = [
-	'Jonas',
-	'Schmedtmann',
-	2037 - 1996,
-	'teacher',
-	[
-		'Michael',
-		'Peter',
-		'Steven '
-	],
-	true
-];
+// const JonasArray = [
+// 	'Jonas',
+// 	'Schmedtmann',
+// 	2037 - 1996,
+// 	'teacher',
+// 	[
+// 		'Michael',
+// 		'Peter',
+// 		'Steven '
+// 	],
+// 	true
+// ];
 
 // const types = [];
 
@@ -224,8 +224,8 @@ const JonasArray = [
 // 	}
 // }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
-console.log(dice);
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
 
 // while (dice != 6) {
 // 	console.log(`You  rolled ${dice}`);
@@ -233,84 +233,5 @@ console.log(dice);
 //   if(dice === 6)
 // }
 
-const bills = [
-	22,
-	295,
-	176,
-	440,
-	37,
-	105,
-	10,
-	1100,
-	86,
-	52
-];
+//
 
-const tips = [];
-const totals = [];
-
-const calcTip = (bill) => {
-	return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
-
-for (let i = 0; i < bills.length; i++) {
-	const tip = calcTip(bills[i]);
-	tips.push(tip);
-	totals.push(tip + bills[i]);
-}
-
-console.log(bills, tips, totals);
-
-const calcAverage = function(arr) {
-	let sum = 0;
-	for (let i = 0; i < arr.length; i++) {
-		sum = sum + arr[i];
-	}
-	return sum / arr.length;
-};
-
-const temperature = [
-	3,
-	-2,
-	-6,
-	-1,
-	'error',
-	9,
-	13,
-	17,
-	15,
-	14,
-	9,
-	5
-];
-const temperature2 = [
-	3,
-	-2,
-	-6,
-	-1,
-	'error',
-	9,
-	13,
-	17,
-	15,
-	14,
-	99,
-	5
-];
-
-const calcTempAmplitude = function(temp1, temp2) {
-	const temp = temp1.concat(temp2);
-	let max = temp[0];
-	let min = temp[1];
-	for (let i = 0; i < temp.length; i++) {
-		if (temp[i] > max) {
-			max = temp[i];
-		}
-		if (temp[i] < min) {
-			min = temp[i];
-		}
-	}
-	return max - Math.abs(min);
-};
-
-console.log(calcTempAmplitude(temperature, temperature2));
