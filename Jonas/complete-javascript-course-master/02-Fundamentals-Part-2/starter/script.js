@@ -285,7 +285,6 @@ const temperature = [
 ];
 
 const calcTempAmplitude = function(temp) {
-	let result = undefined;
 	let max = temp[0];
 	let min = temp[1];
 	for (let i = 0; i < temp.length; i++) {
