@@ -283,8 +283,23 @@ const temperature = [
 	9,
 	5
 ];
+const temperature2 = [
+	3,
+	-2,
+	-6,
+	-1,
+	'error',
+	9,
+	13,
+	17,
+	15,
+	14,
+	99,
+	5
+];
 
-const calcTempAmplitude = function(temp) {
+const calcTempAmplitude = function(temp1, temp2) {
+	const temp = temp1.concat(temp2);
 	let max = temp[0];
 	let min = temp[1];
 	for (let i = 0; i < temp.length; i++) {
@@ -298,4 +313,4 @@ const calcTempAmplitude = function(temp) {
 	return max - Math.abs(min);
 };
 
-console.log(calcTempAmplitude(temperature));
+console.log(calcTempAmplitude(temperature, temperature2));
