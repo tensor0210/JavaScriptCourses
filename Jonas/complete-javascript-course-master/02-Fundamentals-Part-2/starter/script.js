@@ -268,3 +268,35 @@ const calcAverage = function(arr) {
 	}
 	return sum / arr.length;
 };
+
+const temperature = [
+	3,
+	-2,
+	-6,
+	-1,
+	'error',
+	9,
+	13,
+	17,
+	15,
+	14,
+	9,
+	5
+];
+
+const calcTempAmplitude = function(temp) {
+	let result = undefined;
+	let max = temp[0];
+	let min = temp[1];
+	for (let i = 0; i < temp.length; i++) {
+		if (temp[i] > max) {
+			max = temp[i];
+		}
+		if (temp[i] < min) {
+			min = temp[i];
+		}
+	}
+	return max - Math.abs(min);
+};
+
+console.log(calcTempAmplitude(temperature));
