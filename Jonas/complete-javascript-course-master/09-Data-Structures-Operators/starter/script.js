@@ -1,33 +1,38 @@
 'use strict';
 
 const restaurant = {
-	name         : 'Classico Italiano',
-	location     : 'Via Angelo Tavanti 23, Firenze, Italy',
-	categories   : [
+	name          : 'Classico Italiano',
+	location      : 'Via Angelo Tavanti 23, Firenze, Italy',
+	categories    : [
 		'Italian',
 		'Pizzeria',
 		'Vegetarian',
 		'Organic'
 	],
-	starterMenu  : [
+	starterMenu   : [
 		'Focaccia',
 		'Bruschetta',
 		'Garlic Bread',
 		'Caprese Salad'
 	],
-	mainMenu     : [
+	mainMenu      : [
 		'Pizza',
 		'Pasta',
 		'Risotto'
 	],
-	order        : function(starterIndex, mainIndex) {
+	order         : function(starterIndex, mainIndex) {
 		return [
 			this.starterMenu[starterIndex],
 			this.mainMenu[mainIndex]
 		];
 	},
+	orderDelivery : function({ starterIndex, mainIndex, time, address }) {
+		console.log(
+			`Order Received! ${this.starterMenu[starterIndex]} ${this.mainMenu[mainIndex]} at ${address} at ${time} `
+		);
+	},
 
-	openingHours : {
+	openingHours  : {
 		thu : {
 			open  : 12,
 			close : 22
@@ -43,6 +48,7 @@ const restaurant = {
 	}
 };
 
+restaurant.orderDelivery({ time: '22:30', address: 'Parel', mainIndex: 2, starterIndex: 2 });
 // const arr = [
 // 	2,
 // 	3,
@@ -100,6 +106,38 @@ const restaurant = {
 
 // const [
 // 	i,
-// 	j
+// 	,
+// 	[
+// 		j,
+// 		k
+// 	]
 // ] = nested;
-// console.log(i, j);
+// console.log(i, j, k);
+
+// //Default values;
+// const [
+// 	p = 1,
+// 	q = 1,
+// 	r = 1
+// ] = [
+// 	8,
+// 	9
+// ];
+
+// console.log(p, q, r);
+
+const { name: restaurantName, openingHours, categories } = restaurant;
+// console.log(restaurantName, openingHours, categories);
+
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
+
+// ({ a, b } = obj);
+
+//Nested Objects
+const { fri: { open: o, close: c } } = openingHours;
+console.log(o, c);
