@@ -1,52 +1,52 @@
-// 'use strict';
+'use strict';
 
-// const restaurant = {
-// 	name          : 'Classico Italiano',
-// 	location      : 'Via Angelo Tavanti 23, Firenze, Italy',
-// 	categories    : [
-// 		'Italian',
-// 		'Pizzeria',
-// 		'Vegetarian',
-// 		'Organic'
-// 	],
-// 	starterMenu   : [
-// 		'Focaccia',
-// 		'Bruschetta',
-// 		'Garlic Bread',
-// 		'Caprese Salad'
-// 	],
-// 	mainMenu      : [
-// 		'Pizza',
-// 		'Pasta',
-// 		'Risotto'
-// 	],
-// 	order         : function(starterIndex, mainIndex) {
-// 		return [
-// 			this.starterMenu[starterIndex],
-// 			this.mainMenu[mainIndex]
-// 		];
-// 	},
-// 	orderDelivery : function({ starterIndex, mainIndex, time, address }) {
-// 		console.log(
-// 			`Order Received! ${this.starterMenu[starterIndex]} ${this.mainMenu[mainIndex]} at ${address} at ${time} `
-// 		);
-// 	},
+const restaurant = {
+	name          : 'Classico Italiano',
+	location      : 'Via Angelo Tavanti 23, Firenze, Italy',
+	categories    : [
+		'Italian',
+		'Pizzeria',
+		'Vegetarian',
+		'Organic'
+	],
+	starterMenu   : [
+		'Focaccia',
+		'Bruschetta',
+		'Garlic Bread',
+		'Caprese Salad'
+	],
+	mainMenu      : [
+		'Pizza',
+		'Pasta',
+		'Risotto'
+	],
+	order         : function(starterIndex, mainIndex) {
+		return [
+			this.starterMenu[starterIndex],
+			this.mainMenu[mainIndex]
+		];
+	},
+	orderDelivery : function({ starterIndex, mainIndex, time, address }) {
+		console.log(
+			`Order Received! ${this.starterMenu[starterIndex]} ${this.mainMenu[mainIndex]} at ${address} at ${time} `
+		);
+	},
 
-// 	openingHours  : {
-// 		thu : {
-// 			open  : 12,
-// 			close : 22
-// 		},
-// 		fri : {
-// 			open  : 11,
-// 			close : 23
-// 		},
-// 		sat : {
-// 			open  : 0, // Open 24 hours
-// 			close : 24
-// 		}
-// 	}
-// };
+	openingHours  : {
+		thu : {
+			open  : 12,
+			close : 22
+		},
+		fri : {
+			open  : 11,
+			close : 23
+		},
+		sat : {
+			open  : 0, // Open 24 hours
+			close : 24
+		}
+	}
+};
 // //SPread right hand side of =
 // const arr = [
 // 	1,
@@ -238,3 +238,47 @@ const game = {
 		team2 : 6.5
 	}
 };
+
+const [
+	players1,
+	players2
+] = game.players;
+
+// console.log(players2);
+
+const [
+	gf,
+	...fieldPlayers
+] = players1;
+
+const alllPlayers = [
+	...players1,
+	...players2
+];
+const players1Final = [
+	...players1,
+	'Thiago',
+	'Coutinho',
+	'Perisic'
+];
+
+const { odds: { team1, x: draw, team2 } } = game;
+console.log(draw);
+
+const printGoals = function(...players) {
+	console.log(`${players.length}`);
+};
+
+const menu = [
+	...restaurant.starterMenu,
+	...restaurant.mainMenu
+];
+
+for (const item of menu) console.log(item);
+
+for (const item of menu.entries()) console.log(item);
+for (const [
+	i,
+	el
+] of menu.entries())
+	console.log(`${i} , ${el}`);
