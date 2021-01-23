@@ -47,7 +47,28 @@ const restaurant = {
 		}
 	}
 };
-
+//SPread right hand side of =
+const arr = [
+	1,
+	2,
+	...[
+		3,
+		4
+	]
+];
+//REst on the left side of the array to
+const [
+	a,
+	b,
+	...others
+] = [
+	1,
+	2,
+	3,
+	4,
+	5
+	];
+c,
 // const arr = [
 // 	7,
 // 	8,
