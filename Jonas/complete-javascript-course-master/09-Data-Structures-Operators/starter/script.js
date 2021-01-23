@@ -48,7 +48,40 @@ const restaurant = {
 	}
 };
 
-restaurant.orderDelivery({ time: '22:30', address: 'Parel', mainIndex: 2, starterIndex: 2 });
+// const arr = [
+// 	7,
+// 	8,
+// 	9
+// ];
+
+// const newArr = [
+// 	1,
+// 	2,
+// 	...arr
+// ];
+
+// console.log(newArr);
+
+// const newMenu = [
+// 	...restaurant.mainMenu,
+// 	'Gnocci'
+// ];
+// console.log(newMenu);
+
+// const mainMenu = [
+// 	...restaurant.mainMenu
+// ];
+// const menu = [
+// 	...restaurant.starterMenu,
+// 	...restaurant.mainMenu
+// ];
+// console.log(menu);
+// const str = 'Jonas';
+// const letters = [
+// 	...str
+// ];
+// console.log(letters);
+// restaurant.orderDelivery({ time: '22:30', address: 'Parel', mainIndex: 2, starterIndex: 2 });
 // const arr = [
 // 	2,
 // 	3,
