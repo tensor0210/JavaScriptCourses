@@ -131,19 +131,10 @@ const movements = [
 
 /////////////////////////////////////////////////
 
-let arr = [
-	'a',
-	'b',
-	'c',
-	'd',
-	'e',
-	'f'
-];
-
-console.log(arr.splice(1, 2, 6, 6, 6, 6));
-console.log(arr);
-console.log(arr.reverse());
-console.log(arr);
-
-const letters = arr.concat(arr);
-console.log(letters);
+movements.forEach((movement) => {
+	if (movement > 0) {
+		console.log(`You deposited ${movement}`);
+	} else {
+		console.log(`You withdre ${Math.abs(movement)}`);
+	}
+});
