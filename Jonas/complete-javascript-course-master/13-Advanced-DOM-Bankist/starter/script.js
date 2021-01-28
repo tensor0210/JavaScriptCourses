@@ -48,5 +48,5 @@ message.style.width = '120%';
 
 message.style.height = Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
 
-document.documentElement.style.setProperty('--color-primary', 'orangered');
-const logo = document.querySelector('.nav__logo');
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section-1');
